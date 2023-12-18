@@ -19,11 +19,7 @@ export class Parent implements AfterContentInit {
 }
 @Component({
   selector: 'grand-parent',
-  template: `
-    <parent>
-     <grand-child hello="Hi" grand-child/>
-    </parent>
-  `,
+  template: ` <parent><grand-child hello="Hi" grand-child/> </parent>`,
 })
 export class GrandParent implements AfterViewInit{
   @ViewChild(Parent) parent!: Parent; 
